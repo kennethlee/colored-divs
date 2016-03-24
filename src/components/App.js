@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-export default class App extends React {
+import Palette from './Palette';
+
+export default class App extends Component {
   constructor(props) {
     super(props);
 
@@ -8,6 +10,8 @@ export default class App extends React {
   }
 
   render() {
-    return ();
+    return (
+      <Palette />
+    );
   }
 }
