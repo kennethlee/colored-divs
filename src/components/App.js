@@ -7,11 +7,18 @@ export default class App extends Component {
     super(props);
 
     this.state = { color: '' };
+
+    this.onColorSelect = this.onColorSelect.bind(this);
+  }
+
+  onColorSelect(newColor) {
+    this.setState({ color: newColor });
+    console.log(this.state.color);
   }
 
   render() {
     return (
-      <Palette />
+      <Palette onColorSelect={this.onColorSelect} />
     );
   }
 }
