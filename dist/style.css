@@ -1,0 +1,13 @@
+.palette {
+  border-collapse: collapse;
+  width: 100px;
+  height: 200px;
+}
+
+.palette, th, td {
+  border: 1px solid black;
+}
+
+.palette, td {
+  padding-left: 25%;
+}
