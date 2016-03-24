@@ -43,4 +43,8 @@ export default class Palette extends Component {
   }
 }
 
+Palette.propTypes = {
+  onColorSelect: React.PropTypes.func.isRequired,
+};
+
 export default Palette;
