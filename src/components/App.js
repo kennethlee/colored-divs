@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Palette from './Palette';
+import Canvas from './Canvas';
 
 export default class App extends Component {
   constructor(props) {
@@ -17,8 +18,9 @@ export default class App extends Component {
   }
 
   render() {
-    return (
+    return (<div>
       <Palette onColorSelect={this.onColorSelect} />
-    );
+      <Canvas currentColor={this.state.color} />
+    </div>);
   }
 }
