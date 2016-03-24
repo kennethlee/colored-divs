@@ -62,3 +62,7 @@ export default class Canvas extends Component {
     </div>);
   }
 }
+
+Canvas.propTypes = {
+  currentColor: React.PropTypes.string.isRequired,
+};
