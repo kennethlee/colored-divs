@@ -18,7 +18,7 @@ export default class App extends Component {
   }
 
   render() {
-    return (<div>
+    return (<div className="container">
       <Palette onColorSelect={this.onColorSelect} />
       <Canvas currentColor={this.state.color} />
     </div>);

@@ -22,24 +22,24 @@ export default class Palette extends Component {
   }
 
   render() {
-    return (<table className="palette">
-      <thead>
-        <tr>
-          <th>Palette</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td onClick={this.onSelectRed}>Red</td>
-        </tr>
-        <tr>
-          <td onClick={this.onSelectGreen}>Green</td>
-        </tr>
-        <tr>
-          <td onClick={this.onSelectBlue}>Blue</td>
-        </tr>
-      </tbody>
-    </table>);
+    return (<div className="palette">
+      <div className="palette-element"><h3>Color Palette</h3></div>
+      <div
+        onClick={this.onSelectRed}
+        className="palette-element red"
+      >
+      </div>
+      <div
+        onClick={this.onSelectGreen}
+        className="palette-element green"
+      >
+      </div>
+      <div
+        onClick={this.onSelectBlue}
+        className="palette-element blue"
+      >
+      </div>
+    </div>);
   }
 }
 

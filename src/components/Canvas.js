@@ -34,7 +34,7 @@ export default class Canvas extends Component {
   }
 
   render() {
-    return (<div className="container">
+    return (<div className="canvas">
       <div
         onClick={this.updateFirstDivColor}
         className={this.state.firstDivColor}
