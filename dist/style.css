@@ -1,31 +1,42 @@
-.palette {
-  border-collapse: collapse;
-  width: 100px;
-  height: 200px;
-}
-
-.palette, th, td {
-  border: 1px solid black;
-}
-
-.palette, td {
-  padding-left: 25%;
-}
-
 .container {
   display: flex;
-  width: 1000px;
   height: 200px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
 
-.container div {
+.palette {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.palette-element {
+  height: 25%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 0.5em;
+}
+
+.canvas {
+  display: flex;
+  width: 85%;
+  border-radius: 0.5em;
+}
+
+.canvas div {
   width: 25%;
   margin: 8% 2% 8% 2%;
-  justify-content: center;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
 
 /* Colors */
